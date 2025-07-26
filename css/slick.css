@@ -1,0 +1,106 @@
+/* Slider */
+.slick-slider { position: relative; display: block; box-sizing: border-box; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -webkit-touch-callout: none; -khtml-user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
+.slick-list { position: relative; display: block; overflow: hidden; margin: 0; padding: 0; }
+.slick-list:focus { outline: none; }
+.slick-list.dragging { cursor: pointer; cursor: hand; }
+.slick-slider .slick-track, .slick-slider .slick-list { -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); }
+.slick-track { position: relative; top: 0; left: 0; display: block; margin-left: auto; margin-right: auto; }
+.slick-track:before, .slick-track:after { display: table; content: ''; }
+.slick-track:after { clear: both; }
+.slick-loading .slick-track { visibility: hidden; }
+.slick-slide { display: none; float: left; height: 100%; min-height: 1px; }
+[dir='rtl'] .slick-slide { float: right; }
+.slick-slide img { display: inline-block;max-width: 100%;}
+.slick-slide.slick-loading img { display: none; }
+.slick-slide.dragging img { pointer-events: none; }
+.slick-initialized .slick-slide { display: block; }
+.slick-loading .slick-slide { visibility: hidden; }
+.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+.slick-arrow.slick-hidden { display: none; }
+/* Dots */
+.slick-dots {position: absolute;
+    left: 46%;
+    display: block;
+    margin: 0;
+    bottom: -23px;
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+    transform: translate(0%, -50%);}
+.slick-dots li { position: relative;
+    display: block;
+    margin: 8px 6px;
+    padding: 0;
+    float: left;
+    cursor: pointer;
+    vertical-align: bottom;
+    }
+.slick-dots li button { font-size: 0; line-height: 0; display: block; cursor: pointer; color: transparent; border: 0; outline: none; background:url(../images/slide-dot.png) no-repeat right center; padding:0;      width: 15px !important;
+    height: 15px !important; position:relative;}
+.slick-dots li button:hover, .slick-dots li button:focus { outline: none; }
+.slick-dots li button:hover, .slick-dots li.slick-active button{ background: url(../images/active-slide.png) no-repeat right center;
+        width: 15px !important;
+    height: 15px !important;
+	    -o-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+	}
+.slick-dots li.slick-active button:after{border: 0px solid #fc8035;
+    padding: 10px;
+    left: -6px;
+    top: -6px;}
+
+
+
+
+
+
+
+
+.home-banner .slick-dots li a:after {
+    content: "";
+    font-size: 0; line-height: 0; display: block; cursor: pointer; color: transparent; border: 0; outline: none; background:none;      width: 16px !important;
+    height: 16px !important; position:relative;
+}
+.home-banner .slick-dots li.slick-active a:after {
+   content: "";
+    line-height: 0;
+    display: block;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    width: 70% !important;
+    height: 1px !important;
+    left: 23px;
+    top: -12px;
+    background: #ababab;
+  -o-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.home-banner .slick-dots li a:before{content:"";
+    line-height: 20px;
+    display: block;
+    cursor: pointer;
+    color:#ababab;
+    border: 0;
+	height:10px;
+	width:10px;
+	border-radius:80px;
+	border:1px solid #ababab;
+	background:none;
+    outline: none;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-size: 14px;}
+.home-banner .slick-dots li.slick-active a:before{display:none;}	
+
+.home-banner .slick-dots li{}
+.home-banner .slick-dots a {
+   font-size:0;
+}
+.home-banner .slick-dots li.slick-active a{ text-transform:uppercase; color:#CE002E;width:90px; font-size:14px; text-align:left;}
